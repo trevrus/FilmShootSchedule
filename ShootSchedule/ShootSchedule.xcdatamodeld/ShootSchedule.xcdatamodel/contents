@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17C205" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="FilmSet" representedClassName="FilmSet" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="shootDays" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ShootDay" inverseName="filmSets" inverseEntity="ShootDay" syncable="YES"/>
+    </entity>
+    <entity name="ShootDay" representedClassName="ShootDay" syncable="YES" codeGenerationType="class">
+        <attribute name="callTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dayNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="episodeNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="filmSets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FilmSet" inverseName="shootDays" inverseEntity="FilmSet" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="FilmSet" positionX="-63" positionY="-45" width="128" height="73"/>
+        <element name="ShootDay" positionX="-54" positionY="72" width="128" height="103"/>
+    </elements>
 </model>

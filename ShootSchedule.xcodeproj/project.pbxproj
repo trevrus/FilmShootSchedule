@@ -56,13 +56,13 @@
 		692A1B41207D050700E00222 /* ShootSchedule */ = {
 			isa = PBXGroup;
 			children = (
+				692A1B49207D050700E00222 /* ShootSchedule.xcdatamodeld */,
 				692A1B42207D050700E00222 /* AppDelegate.swift */,
 				692A1B44207D050700E00222 /* ViewController.swift */,
 				692A1B46207D050700E00222 /* Main.storyboard */,
 				692A1B4C207D050700E00222 /* Assets.xcassets */,
 				692A1B4E207D050700E00222 /* LaunchScreen.storyboard */,
 				692A1B51207D050700E00222 /* Info.plist */,
-				692A1B49207D050700E00222 /* ShootSchedule.xcdatamodeld */,
 			);
 			path = ShootSchedule;
 			sourceTree = "<group>";
@@ -280,6 +280,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ShootSchedule/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.westleaf.ShootSchedule;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -294,6 +295,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ShootSchedule/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.westleaf.ShootSchedule;
 				PRODUCT_NAME = "$(TARGET_NAME)";
